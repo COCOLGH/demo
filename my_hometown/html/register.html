@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>register</title>
+	<link rel="stylesheet" href="../css/register.css">
+	<style type="text/css">
+	td div{
+		font-size: 12px;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="RegisterBox">
+			<div class="userImage">
+				<img src="../images/cat.jpg">
+			</div>	
+			<form action="" id="myForm" onsubmit="return chkAll();">
+				<div class="input-wrapper">
+					<label>邮箱</label>
+					<input type="text" name="email" id="email" size="20" onblur="chkEmail();"/>
+					<div class="prompt" id="emailPrompt">*</div>
+				</div>
+				<div class="input-wrapper">
+					<div class="input">
+						<label>用户名</label>
+						<input type="text" name="username" id="username" size="20" onblur="chkUsername();"/>
+					</div>
+					<div class="prompt" id="usernamePrompt">*6-12个字符</div>
+				</div>
+				<div class="input-wrapper">
+					<label>性别</label>
+					<div class="sex">
+						<input type="radio" name="gender" value="male" checked="checked"/>男
+						<input type="radio" name="gender" value="female"/>女
+					</div>
+					<div class="prompt" id="genderPrompt">*</div>
+				</div>
+				<div class="input-wrapper">
+					<label>密码</label>
+					<input type="password" name="password" id="password" size="21" onblur="chkPassword();" />
+					<div class="prompt" id="passwordPrompt">*</div>
+				</div>
+				<div class="input-wrapper">
+					<label>重复密码</label>
+					<input type="password" name="password2" id="password2" size="21" onblur="chkPasswords();"/>
+					<div class="prompt" id="password2Prompt">*</div>
+				</div>
+				<div class="input-wrapper">
+					<label>身份证号码</label>
+					<input type="text" name="idnum" id="idnum" size="20" onblur="chkIdnum();"/>
+					<div class="prompt" id="idnumPrompt">&nbsp;</div>
+				</div>
+				<div class="input-wrapper">
+					<label>联系电话</label>
+					<input type="text" name="phonenum" id="phonenum" size="20" onblur="chkPhonenum();"/>
+					<div class="prompt" id="phonenumPrompt">&nbsp;</div>
+				</div>
+				<div class="input-wrapper">
+					<input type="submit" name="submit" class="btn" value="提交"/>
+					<input type="reset" name="reset" class="btn" value="重置"/>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script language="javascript" src="../js/validata.js"></script>
+	<script language="javascript" src="../js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrap{
+	width: 100%;
+	height: 100%;
+	background-color: #f6f6f6;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.content{
+	width: 70%;
+	height: 100%;
+	margin: 0 auto;
+	background-image: url(../images/plumBlossom.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+h1{
+	font-size: 50px;
+}
+#target_timeInput{
+	margin-top: 5%;
+}
+#year,#month,#day{
+	width: 10%;
+	color: #7a7374;
+	border: 0;
+	outline:none;  
+	background: none;
+	text-align: center;
+}
+
+
+#start{
+	width: 100px;
+	height: 100px;
+	margin: 50px 0;
+	color: #ffc90c;
+	font-weight: bold;
+	line-height: 100px;
+	text-align: center;
+	border-radius: 50%;
+	background-image: url(../images/floor.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+#stop{
+	width: 100px;
+	height: 100px;
+	margin: 50px 0;
+	color: #ffc90c;
+	font-weight: bold;
+	line-height: 100px;
+	text-align: center;
+	border-radius: 50%;
+	background-image: url(../images/floor.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+#start:hover{
+	font-size: 20px;
+	color: #000;
+}
+#stop:hover{
+	font-size: 20px;
+	color: #000;
+}
+
+#Ttitle{
+	margin-top: 17%;
+	font-size: 25px;
+}
+#run-time{
+	width: 40%;
+	height: 100%;
+	margin-top: 3%;
+	text-align: center;
+	border: 1px solid #ccc;
+	box-shadow: 10px 10px 5px #888;
+}
+#iDay,#iHour,#iMin,#iSec{
+	font-size: 48px;
+	color: #F66049;
+}
+.font{
+	font-size: 30px;
+	color: #97D8BD;
+}
+
+
+#footer{
+	width: 100%;
+	height: 32px;
+	line-height: 32px;
+	margin-top: 5%;
+	overflow: hidden;
+	text-align: center;
+	background: #f8f8f8;
+}
+#footer #logo{
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	margin: 0 2%;
+	margin-top: 0.2%;
+	border-radius: 50%;
+	background-image: url(../images/logo_1.jpg);
+	background-position: 50% 19%;
+}

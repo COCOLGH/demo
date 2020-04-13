@@ -1,0 +1,458 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+a:hover{
+	text-decoration: none;
+}
+body{
+	position: relative;
+}
+
+
+#wrap{
+	width: 100%;
+}
+
+#header{
+	width: 90%;
+	margin: 0 auto;
+	line-height: 70px;
+	background-color: #000;
+}
+.Tnav {
+	width: 70%;
+	padding: 10px;
+	margin: 0 auto;
+}
+.Tnav:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.Tnav li{
+	float: left;
+	margin: 0 6%;
+	color: #fff;
+	font-size: 22px;
+}
+
+
+
+/*/////////////////////////////// 主体内容 */
+#content{
+	width: 90%;
+	margin: 3% auto;
+	box-shadow: 3px 3px 5px #ccc;
+}
+
+.video{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 5%;
+}
+
+
+.scenseBox{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 10%;
+}
+
+/* 西江 */
+.riverside{
+	width: 90%;
+	height: 70%;
+	margin: 2% auto;
+}
+.riverside span{
+	display: inline-block; 
+	width: 100px;
+	height: 50px;
+	color: #fff;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 10px;
+	box-sizing: border-box;
+	background-color: #000;
+}
+.scenseXJ img{
+	width: 100%;
+	height: 650px;
+}
+
+/*白云山*/
+.BYS{
+	width: 90%;
+	height: 70%;
+	margin: 2% auto;
+}
+.BYS::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.BYS .img{
+	width: 80%;
+	height: 90%;
+	float: left;
+}
+.BYS .img img{
+	width: 100%;
+	height: 100%;
+}
+.BYStext{
+	width: 17%;
+	float: right;
+	text-indent: 2em;
+	font-size: 20px;
+	line-height: 32px;
+	opacity: 0.7;
+	padding: 0 1%;
+	background-color: antiquewhite;
+}
+
+
+.text{
+	text-indent: 2em;
+	font-size: 20px;
+	line-height: 32px;
+	margin: 2% 5%;
+}
+/* 苍海湖 */
+.CHH{
+	width: 90%;
+	height: 70%;
+	margin: 2% auto;
+}
+.carouselWrap{
+	width: 100%;
+	height: 750px;
+}
+
+.mycarousel{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.mycarousel img{
+	width: 100%;
+	height: 100%;
+}
+.mycarousel span{
+	display: block;
+	width: 50px;
+	height: 50px;
+	font-size: 50px;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+}
+.mycarousel .toLeft{
+	left: 0;
+}
+.mycarousel .toRight{
+	right: 0;
+}
+
+
+/* 龙母庙 */
+.LMM{
+	margin: 2% 5%;
+}
+.LMM_img{
+	width: 90%;
+	height: 70%;
+	margin: 2% auto;
+}
+.LMM:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.LMM li{
+	width: 50%;
+	height: 70%;
+	float: left;
+	transition: all 0.5s;
+}
+.LMM li img{
+	width: 100%;
+	height: 60%;
+}
+.LMM:hover .LMM_{
+	transform: translate(20px, -20px);
+	box-shadow: 5px 5px 5px #ccc;
+}
+
+
+/* 骑楼城 */
+.QLC{
+	width: 100%;
+}
+.QLCbox{
+	width: 90%;
+	margin: 2% auto;
+	/* background-color: #12c; */
+}
+.QLCbox ul{
+	width: 30%;
+	height: 100%;
+	float: left;
+	margin: 1% 0;
+	border: 1px solid #99a;;
+	position: relative;
+}
+.QLCbox .box2{
+	margin:1% 5%;
+}
+.QLCbox:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.QLCimg{
+	width: 100%;
+	height: 500px;
+}
+.QLCtext{
+	width: 100%;
+	height: 500px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 500px;
+	opacity: 0;
+	background-color: #ccc;
+	transition: all 2s;
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	z-index: 9999;
+}
+.QLCtext:hover{
+	-webkit-animation: QLCanimate 2s;
+	-moz-animation: QLCanimate 2s;
+	-o-animation: QLCanimate 2s;
+	-ms-animation: QLCanimate 2s;
+	animation: QLCanimate 2s;
+}
+@keyframes QLCanimate{
+	from{
+		transform: rotate(0deg);
+		opacity: 0;
+	}
+	to{
+		transform: rotate(360deg);
+		opacity: 0.7;
+	}
+}
+.QLCimg.img1{
+	background-image:url(../images/scenics/QLC.jpg);
+}
+.QLCimg.img2{
+	background-image:url(../images/scenics/QLC2.jpg);
+}
+.QLCimg.img3{
+	background-image:url(../images/scenics/QLC4.jpg);
+}
+
+
+/*  玫瑰湖 */
+.MGHbox{
+	width: 90%;
+	margin: 2% auto;
+	/* background-color: #12c; */
+}
+.MGHbox ul{
+	width: 30%;
+	height: 100%;
+	float: left;
+	margin: 1% 0;
+	border: 1px solid #99a;;
+	position: relative;
+}
+.MGHbox .box2{
+	margin:1% 5%;
+}
+.MGHbox:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.MGHimg{
+	width: 100%;
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: 130% 100%;
+}
+.MGHtext{
+	width: 100%;
+	height: 500px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 500px;
+	opacity: 0;
+	background-color: #ccc;
+	transition: all 2s;
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	z-index: 9999;
+}
+.MGHtext:hover{
+	-webkit-animation: MGHanimate 2s;
+	-moz-animation: MGHanimate 2s;
+	-o-animation: MGHanimate 2s;
+	-ms-animation: MGHanimate 2s;
+	animation: MGHanimate 2s;
+}
+@keyframes MGHanimate{
+	from{
+		transform:translate(-100px);
+		opacity: 0;
+	}
+	to{
+		transform: translate(0px);
+		opacity: 0.8;
+	}
+}
+
+.MGHimg.img1{
+	background-image:url(../images/scenics/MGH1.jpeg);
+}
+.MGHimg.img2{
+	background-image:url(../images/scenics/MGH2.jpeg);
+}
+.MGHimg.img3{
+	background-image:url(../images/scenics/MGH3.jpg);
+}
+
+
+
+/* 评论样式 */
+.commentbox{
+	width: 90%;
+	margin: 20px auto;
+}
+.reply a{
+	text-decoration: none;
+	color: #000;
+}
+.commentbox a:hover{
+	text-decoration: none;
+	color: #000;
+}
+.mytextarea {
+	width: 100%;
+	overflow: auto;
+	word-break: break-all;
+	height: 100px;
+	color: #000;
+	font-size: 1em;
+	resize: none;
+}
+.comment-list{
+	width: 90%;
+	margin: 20px auto;
+	clear: both;
+	padding-top: 20px;
+}
+.comment-list .comment-info{
+	position: relative;
+	margin-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+}
+.comment-list .comment-info header{
+	width: 10%;
+	position: absolute;
+}
+.comment-list .comment-info header img{
+	width: 70%;
+	border-radius: 50%;
+	padding: 5px;
+}
+.comment-list .comment-info .comment-right{
+	padding:5px 0px 5px 11%; 
+}
+.comment-list .comment-info .comment-right h3{
+	margin: 5px 0px;
+}
+.comment-list .comment-info .comment-right .comment-content-header{
+	height: 25px;
+}
+.comment-list .comment-info .comment-right .comment-content-header span,.comment-list .comment-info .comment-right .comment-content-footer span{
+	padding-right: 2em;
+	color: #aaa;
+}
+.comment-list .comment-info .comment-right .comment-content-header span,.comment-list .comment-info .comment-right .comment-content-footer span.reply-btn,.send,.reply-list-btn{
+	cursor: pointer;
+}
+.comment-list .comment-info .comment-right .reply-list {
+	border-left: 3px solid #ccc;
+	padding-left: 7px;
+}
+.comment-list .comment-info .comment-right .reply-list .reply{
+	border-bottom: 1px dashed #ccc;
+}
+.comment-list .comment-info .comment-right .reply-list .reply div span{
+	padding-left: 10px;
+}
+.comment-list .comment-info .comment-right .reply-list .reply p span{
+	padding-right: 2em;
+	color: #aaa;
+}
+
+
+/* 描点样式 */
+.miao{
+	display: block;
+	width: 35px;
+	height: 35px;
+	color: #000;
+	line-height: 32px;
+	text-align: center;
+	border: 1px solid #ccc;
+	box-shadow: 5px 5px 5px #ccc;
+	position: absolute;
+	right: 1%;
+	top: 98%;
+}
+
+/*/////////////////////////////// 脚注部分 */
+#footer::before{
+	content: '';
+	display: block;
+	clear: both;
+}
+#footer{
+	width: 100%;
+	height: 32px;
+	line-height: 32px;
+	margin-top: 3%;
+	overflow: hidden;
+	text-align: center;
+	background: #f8f8f8;
+}
+#footer #logo{
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	margin: 0 2%;
+	margin-top: 0.2%;
+	border-radius: 50%;
+	background-image: url(../images/logo_1.jpg);
+	background-position: 50% 19%;
+}

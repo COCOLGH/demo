@@ -1,0 +1,267 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+a:hover{
+	text-decoration: none;
+	color: #000;
+}
+
+.wrap{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+/*///////////////////////////////头部*/
+.header:after{
+	width: 100%;
+	height: 500px;
+	content: "";
+	opacity: 0.7;
+	background-image: url(../images/wz.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: block;
+  	clear: both;
+}
+.aside{
+	font-size: 30px;
+	font-family: "宋体"
+}
+.aside span{
+	height: 100px;
+}
+.aside a{
+	height: 90px;
+}
+
+
+/*///////////////////////////////主体部分的内容*/
+.content{
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+/********************第一行样式*/
+.main{
+	margin: 3% 0;
+}
+.mainContent{
+	border: 1px solid #ccc;
+}
+.mtext{
+	float: left;
+	width: 60%;
+	font-size: 18px;
+	line-height: 32px;
+	padding-top: 5%;
+}
+.main .mimg{
+	float: right;
+	width: 35%;
+	height: 17%;
+	border-radius: 10%;
+}
+
+
+/********************第二行样式*/
+.carouselWrap{
+	width: 100%;
+	height: 700px;
+}
+
+.mycarousel{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.mycarousel img{
+	width: 100%;
+	height: 100%;
+}
+.mycarousel span{
+	display: block;
+	width: 50px;
+	height: 50px;
+	font-size: 50px;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+}
+.mycarousel .toLeft{
+	left: 0;
+}
+.mycarousel .toRight{
+	right: 0;
+}
+
+
+/********************第三行样式*/
+.history{
+	width: 70%;
+	margin: 5% auto;
+}
+.Himg{
+	width: 50%;
+	float: left;
+	margin-top: 5%;
+	box-shadow: -10px 10px 5px #ccc;
+}
+
+/* 设置翻书样式*/
+.book-wrap {
+	float: right;
+	width: 50%;
+	/*height: 500px;*/
+	height: 30%;
+	font-size: 18px;
+	line-height: 40px;
+	padding: 1% 2%;
+	position: relative;
+	margin: 0 auto;
+	transform: rotateX(30deg);
+	transform-style: preserve-3d;
+	box-shadow: 5px 5px 5px #000;
+}
+.page {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	padding-top: 10%;
+	justify-content: center;
+	transform-origin: left;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.book-cover {
+	font-size: 40px;
+	color: #000;
+	background-image: url(../images/history1.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	animation: roll 12s ease 0s 2 alternate;
+}
+.book-content {
+	background-color: #fff;
+	color: #33363C;
+}
+.book-content1{
+	background-image: url(../images/history2.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	animation: roll 7s ease 5s 2 alternate;
+}
+.book-content2 {
+	background-image: url(../images/history3.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	animation: roll 9s ease 3s 2 alternate;
+}
+.book-content3 {
+	background-image: url(../images/history4.jfif);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	animation: roll 11s ease 1s 2 alternate;
+}
+.end{
+	background-color: #1976D2;
+}
+@keyframes roll {
+	from {transform: rotateY(0)}
+	to {transform: rotateY(-180deg)}
+}
+
+
+/********************第四行样式*/
+.cardWrap::before{
+	content: '';
+	display: block;
+	clear: both;
+}
+.cardWrap{
+	width: 100%;
+	padding-left: 4%;
+	text-align: center;
+	background-color: #F6EFE6;
+}
+.card {
+	display: block;
+	width: 18%;
+	height: 90%;
+	line-height: 24px;
+	float: left;
+	margin: 3%;
+	border: 1px solid #ccc;
+	box-shadow: 5px 5px 5px #ccc;
+	transition: all 0.5s;
+}
+.card:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.card:hover{
+	transform: translateY(-7px);
+	box-shadow: 10px 10px 10px #CCC;
+}
+.card img{
+	width: 100%;
+	height: 65%;
+}
+.Ctitle{
+	font-size: 17px;
+	margin-top: 20px;
+}
+.Ccont{
+	color: #7a7374;
+}
+
+
+.miao{
+	display: block;
+	width: 35px;
+	height: 35px;
+	line-height: 32px;
+	text-align: center;
+	border: 1px solid #ccc;
+	box-shadow: 5px 5px 5px #ccc;
+	position: absolute;
+	right: 1%;
+	top: 97%;
+}
+
+
+
+
+/*///////////////////////////////脚注部分*/
+.footer{
+	width: 100%;
+	height: 32px;
+	line-height: 32px;
+	margin-top: 3%;
+	overflow: hidden;
+	text-align: center;
+	background: #f8f8f8;
+}
+.footer #logo{
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	margin: 0 2%;
+	margin-top: 0.2%;
+	border-radius: 50%;
+	background-image: url(../images/logo_1.jpg);
+	background-position: 50% 19%;
+}
+

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="../js/jquery.min.js"></script>
+	<!-- 引入bootstrap需要的文件 -->
+	<script src="../js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/index.css">
+	<title>welcome wuzhou</title>
+
+	<style type="text/css">
+	/*评论区中更换背景和文字样式*/
+	#comment{
+		width: 100%;
+		height: 200px;
+		font-size: 18px;
+		margin: 2% auto;
+		border: 1px solid #ccc;
+	}
+	.purpleCss{
+		background-color: #eef;
+	}
+	.whiteCss{
+		background-color: #fff;
+	}
+	.blackCss{
+		background-color: #000;
+	}
+</style>
+
+</head>
+<body>
+	<div class="wrap">
+		<!-- //////////////////////////////////////////////头部 -->
+		<div class="header" id="header">
+			<nav class="navbar">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">		<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">梧州首页</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> 其他功能 <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="food.html">美食</a></li>								
+								<li><a href="scenics.html">旅游景点</a></li>
+								<li><a href="feature.html">地方特色</a></li>
+								<li><a href="countdown.html">新年倒计时</a></li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-left">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="请输入搜索内容">
+						</div>
+						<button type="submit" class="btn btn-default">搜索</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="login.html">登录</a></li>
+						<li><a href="register.html">注册</a></li>
+						<li>
+							<img src="../images/cat.jpg" style="width: 60px; height: 60px;">
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</nav>
+		</div>
+
+		<!-- //////////////////////////////////////////////主体部分 -->
+		<div class="container-fuild content">
+			<!--........................ 第一行 -->
+			<div class="row main">
+				<!-- 左侧菜单栏 -->
+				<div class="list-group col-md-2 col-sm-2 aside">
+					<span class="list-group-item active">简介</span>
+					<a href="scenics.html" class="list-group-item">旅游景点</a>
+					<a href="food.html" class="list-group-item">美食</a>
+					<a href="feature.html" class="list-group-item">地方特色</a>
+					<a href="countdown.html" class="list-group-item">新年倒计时</a>
+				</div>
+				<!-- 右侧主体 -->
+				<div class="col-md-9 col-sm-9 mainContent">
+					<ul class="mtext">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;梧州，广西下辖地级市。梧州是古苍梧郡、古广信县所在地，是粤语的发源地之一，广府民系发源地，岭南文化发源地之一。有“绿城水都”、“百年商埠” 、“世界人工宝石之都” 之美称。是国家森林城市、国家园林城市、全国双拥模范城市、中国优秀旅游城市。梧州位于东经110°18′～111°40′，北纬22°37′～24°18′之间，地处“三圈一带”（珠三角经济圈、北部湾经济圈、大西南经济圈和珠江—西江经济带）交汇节点。 梧州位于广西东部，扼浔江、桂江、西江总汇，自古以来便被称作“三江总汇。是广西东大门，是中国西部大开发十二个省中最靠近粤港澳的城市，东邻封开县、郁南县，东南与罗定接壤，南接容县，西连平南县，北通昭平县、荔浦县，东北与贺州接壤，西北与金秀县毗邻。
+					</ul>
+					<img class="mimg" src="../images/wz_bdbk.jpg" alt="picture">
+				</div>
+			</div>
+
+			
+			<!--........................ 第二行 轮播图-->
+			<div class="row carouselWrap">
+				<h2 style="text-align: center;" class="animated fadeInDown">城市景观</h2>
+				<div class="mycarousel">
+					<img src="../images/carousel/1.jpg" alt="..." class="carousel">
+					<span class="toLeft glyphicon glyphicon-menu-left"></span>
+					<span class="toRight glyphicon glyphicon-menu-right"></span>
+				</div>
+			</div>
+
+
+			<!--........................ 第三行 历史 -->
+			<div class="row history">
+				<img class="Himg" src="../images/history.jpeg" alt="picture">
+				<ul class="book-wrap">
+					<li class="page book-cover end">
+					</li>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;梧州市是一座历史、文化底蕴很深的城市，四千多年前，舜帝南巡，崩于苍梧之野。秦始皇统一中国后，梧州属桂林郡。汉高后五年（公元前183年），赵佗称南越武帝，封赵光为苍梧王，建苍梧一事王城。秦始皇凿通灵渠，沟通了长江与珠江两大水系，梧州成为陆海丝绸之路的交汇点，粤语的发源地。汉代梧州有316年是岭南的首府；梧州是两广之“广”所在地，即以古广信为界，广信以东叫广东，广信以西叫广西，广东广西由此得名。唐武德四年（公元前621年）改名为梧州。明代，梧州有100多年是两广的政治、军事、经济中心。1879年开埠后，梧州商贾云集，留下一座座富有特色的骑楼建筑，使梧州成为两广的骑楼博物城。游览梧州文化长廊、河东老城区、鸳鸯江、英国领事署旧址……，一日便可以读懂梧州4000年历史。
+						<li class="page book-content book-content1"></li>
+						<li class="page book-content book-content2"></li>
+						<li class="page book-content book-content3"></li>
+					<li class="page book-cover">“梧州历史书”</li>
+				</ul>
+			</div>
+
+
+			<!--......................... 第四行 -->
+			<div class="row cardWrap">
+				<ul><a class="card" href="scenics.html">
+					<img src="../images/card_scenic1.jpg" alt="picture">
+					<p class="Ctitle animated bounceInDown">旅游景点</p>
+					<p class="Ccont">骑楼城、玫瑰湖、苍海湖（又名梧州园博园）、龙母庙、白云山、中山纪念堂等等</p>
+				</a></ul>		
+				<ul><a class="card" href="food.html">
+					<img src="../images/card_food.jpg" alt="picture">
+					<p class="Ctitle animated wobble">特色美食</p>
+					<p class="Ccont">六堡茶、龟苓膏、纸包鸡、冰泉豆浆、梧州艇仔粥、梧州煲仔饭等</p>
+				</a></ul>		
+				<ul><a class="card" href="feature.html">
+					<img src="../images/card_custom.jpg" alt="picture">
+					<p class="Ctitle animated tada">地方风俗及特色</p>
+					<p class="Ccont">赛龙舟、戏剧文化、宝石节</p>
+				</a></ul>		
+				<ul><a class="card" href="countdown.html">
+					<img src="../images/card_countdown.jpg" alt="picture">
+					<p class="Ctitle animated flash">新年倒计时</p>
+					<p class="Ccont">叮咚，请查收你的新年倒计时！</p>
+				</a></ul>		
+			</div>
+		</div>
+
+		<!-- 头部锚点 -->
+		<a href="#header" class="glyphicon glyphicon-chevron-up miao"></a>
+
+		<!-- //////////////////////////////////////////////脚注 -->
+		<div class="footer">
+			<span>软件Q176 &nbsp;&nbsp;&nbsp;&nbsp; 陈春丽</span>
+			<span id="logo"></span>
+			<span>2019-2020-1学期 &nbsp;&nbsp;&nbsp;&nbsp; web课程设计</span>
+		</div>
+	</div>
+	
+
+	<script type="text/javascript" src="../js/index.js"></script>
+</body>
+</html>

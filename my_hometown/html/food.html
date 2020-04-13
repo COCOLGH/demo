@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/food.css">
+	<title>food</title>
+</head>
+<body>
+	<div class="wrap">
+
+		<!-- //////////////////////////////////////////////最具特色的龟苓膏 -->
+		<div class="GLG">
+			<ul class="GLG_text">
+				<h2>龟苓膏</h2>
+
+				<p><span id="btn" onclick="showGLG();">龟苓膏</span>是梧州历史悠久的传统药膳，相传是清朝宫中皇帝指定食用的名贵药物。</p>
+				<p>它主要以名贵的鹰嘴龟和土茯苓为原料，再配生地等药物精制而成。</p>
+				<p>几百年来，龟苓膏因其清热解毒、滋阴养颜、止瘙痒去疮毒的功效久负盛名，不仅梧州人形成了服食龟苓膏的习惯，这种习惯更流传至两广、港澳以及东南亚各地。</p>
+			</ul>
+			<img src="../images/food/GLG_bg.jpg" alt="picture">
+		</div>
+		<div class="GLGpic">
+			<span class="glyphicon glyphicon-remove" onclick="myClose()"></span>
+			<img id="pic" src="../images/food/test.png" alt="picture">
+		</div>
+
+
+
+		<!-- ////////////////////////////////////////////// 美食列表1 -->
+		<div class="list">
+			<h2>饮食文化 | 舌尖上的梧州</h2>
+			<p style="font-size: 16px; text-align: center; color: #867e76;">了解梧州的饮食文化</p>
+			<ul>
+				<li class="listBox box1">
+					<img src="../images/food/ZBJ.png" alt="picture">
+				</li>
+				<li class="listBox box2">
+					<img src="../images/food/LBC3.jpg" alt="picture">
+					<div class="hiddenBox">
+						<h2>六堡茶</h2>
+
+						<p>广西壮族自治区梧州市特产，中国国家地理标志产品</p>
+
+						<hr />
+
+						<p>六堡茶素以“红、浓、陈、醇”四绝著称。其条索长整紧结，汤色红浓，香气陈厚，滋味甘醇可口。正统应带松烟和槟榔味，叶底铜褐色</p>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li class="listBox box3">
+					<img src="../images/food/BQDJ.jpeg" alt="picture">
+				</li>
+				<li class="listBox box4">
+					<img src="../images/food/LC1.jpg" alt="picture">
+					<div class="hiddenBox">
+						<h2>腊肠</h2>
+						<p>梧州腊肠起源于广味腊肠，拥有外形独特和别具一格的梧州本地特色风味，呈完整的圆柱状，外形细长，有大坑皱纹，红白分明，腊香味明显，衣脆肉爽，味微咸不太甜，甘香不腻。</p>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li class="listBox box5">
+					<img src="../images/food/TL.jpeg" alt="picture">
+					<div class="hiddenBox">
+						<p>梧州的炒田螺非常著名，已有250多年历史。这个地方有个民谚：“鸡汤甜，鸭汤臊，饮着螺汤不抬头！”，炒田螺是梧州的风味小食之一</p>
+						<h2>醒醒田螺</h2>
+					</div>
+				</li>
+				<li class="listBox box6">
+					<h2 class="h">艇</h2>
+					<h2 class="h">仔</h2>
+					<h2 class="h">粥</h2>
+					<p class="p">
+						<strong>艇仔粥</strong>，它是梧州著名的传统小食之一。源于广州市荔湾。原来主要是以新鲜的河虾或鱼片配入熬烂的稀粥中，后来增加了海蛰、花生、浮皮、葱花，还配入鸡鸭肉、瘦猪肉、动物内脏等，鲜香可口
+					</p>
+				</li>
+			</ul>
+		</div>
+
+
+		<!-- ///////////////////////////////////////////// 美食列表2 -->
+		<div class="smallList">
+			<div class="smallList-inner">
+				<h2 style="text-align: center;">饮食文化 | 更多美味</h2>
+				<p style="font-size: 16px; margin-bottom: 3%; text-align: center; color: #867e76;">了解更多梧州的饮食文化</p>
+				<ul class="smallListContent">
+					<li>
+						<img src="../images/food/HCF.jpg" alt="">
+						<p>滑肉肠粉&nbsp;&nbsp;&nbsp;&nbsp;因形似猪肠又名猪肠粉</p>
+					</li>
+					<li>
+						<img src="../images/food/SXB.jpg" alt="">
+						<p>神仙钵&nbsp;&nbsp;&nbsp;&nbsp;梧州春节节庆文化的特色菜</p>
+					</li>
+					<li>
+						<img src="../images/food/LZ1.png" alt="">
+						<p>沙头迟熟荔枝&nbsp;&nbsp;&nbsp;&nbsp;皮薄肉厚核小，多汁清甜</p>
+					</li>
+					<li>
+						<img src="../images/food/TLJB.jpg" alt="">
+						<p>田螺鸡煲&nbsp;&nbsp;&nbsp;&nbsp;肉嫩汤鲜，香味诱人</p>
+					</li>
+				</ul>
+				<span class="
+				glyphicon glyphicon-chevron-left left"></span>
+				<span class="
+				glyphicon glyphicon-chevron-right right"></span>
+			</div>
+		</div>
+
+
+		<!-- //////////////////////////////////////////////脚注 -->
+		<div id="menuBox">
+			<ul>
+				<li onclick="history.go(1)">前进</li>
+				<li onclick="history.go(-1)">后退</li>
+				<li class="line" onclick="location.reload()">刷新</li>
+				<li><a href="login.html">登录</a></li>
+				<li class="line"><a href="register.html">注册</a></li>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="countdown.html">倒计时</a></li>
+				<li><a href="scenics.html">旅游景点</a></li>
+				<li><a href="feature.html">地方特色</a></li>
+			</ul>
+		</div>
+		
+
+		<!-- //////////////////////////////////////////////脚注 -->
+		<div id="footer">
+			<span>软件Q176 &nbsp;&nbsp;&nbsp;&nbsp; 陈春丽</span>
+			<span id="logo"></span>
+			<span>2019-2020-1学期 &nbsp;&nbsp;&nbsp;&nbsp; web课程设计</span>
+		</div>
+
+	</div>
+
+
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/food.js"></script>
+</body>
+</html>

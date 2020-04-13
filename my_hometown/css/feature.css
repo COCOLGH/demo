@@ -1,0 +1,490 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/* 元宵节 设置图片样式需要用到 */
+body {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+a:hover{
+	text-decoration: none;
+}
+p{
+	font-size: 16px;
+}
+
+
+#wrap{
+	width: 100%;
+}
+
+#header{
+	width: 90%;
+	margin: 0 auto;
+	line-height: 70px;
+	background-color: #000;
+}
+.Tnav {
+	width: 70%;
+	padding: 10px;
+	margin: 0 auto;
+}
+.Tnav:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.Tnav li{
+	float: left;
+	margin: 0 6%;
+	color: #fff;
+	font-size: 22px;
+}
+
+
+
+/*/////////////////////////////// 主体内容 */
+#content{
+	width: 90%;
+	margin: 3% auto;
+	box-shadow: 3px 3px 5px #ccc;
+}
+
+/* 节日特色 */
+.JR{
+	width: 100%;
+}
+.JRwrap{
+	width: 100%;
+	height: 100%;
+}
+.JRwrap:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.JRbox{
+	width: 45%;
+}
+.odd{
+	float: left;
+	margin-left: 4%;
+}
+.even{
+	float: right;
+	margin-right: 4%;
+}
+.line{
+	width: 0px;
+	height: 200px;
+	margin: 0 auto;
+	border: 1px solid #000;
+}
+
+.JRbox p{
+	width: 35%;
+	text-indent: 2em;
+	line-height: 32px;
+}
+.odd p{
+	float: left;
+	margin-top: 15%;
+}
+.even p{
+	float: right;
+}
+strong{
+	font-size: 24px;
+}
+.JRbox .img{
+	width: 65%;
+	height: 370px;
+	overflow: hidden;
+}
+.odd .img{
+	float: right;
+}
+.img img{
+	width: 100%;
+	height: 100%;
+}
+
+/* 除夕 */
+.cxP{
+	line-height: 32px;
+}
+.translatebox{
+	width: 2000px;
+	height: 100%；
+}
+.translatebox li{
+	float: left;
+}
+
+/* 春节 */
+.newYear img{
+	transition: all 0.5s;
+}
+.newYear:hover img {
+	transform: rotateY(90deg);
+}
+.newYear:hover{
+	background-image: url(../images/feature/xn.jfif);
+}
+
+/*元宵节*/
+.parent {
+	width: 300px;
+	height: 300px;
+	margin: 100px auto;
+	position: relative;
+	transform: rotate(45deg);
+	transform-style: preserve-3d;
+	transition: transform 1s linear;
+	animation: col 30s linear infinite;
+}
+@keyframes col {
+	0% {
+		transform: rotateX(0deg) rotateY(0deg);
+	}
+
+	100% {
+		transform: rotateX(360deg) rotateY(360deg);
+	}
+}
+.parent > div {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	border: none;
+}
+.parent > div:nth-child(1) {
+	background: url(../images/feature/YXJ.jpeg) no-repeat 0 0;
+	background-size: cover;
+	transform: translateZ(-150px);
+	transition: transform 1s linear;
+}
+
+.parent > div:nth-child(2) {
+	background: url(../images/feature/YX.jpeg) no-repeat 0 0;
+	background-size: cover;
+	transform: rotateY(-90deg) translateZ(150px);
+	transition: transform 1s linear;
+}
+
+.parent > div:nth-child(3) {
+	background: url(../images/feature/TY.jpeg) no-repeat 0 0;
+	background-size: cover;
+	transform: rotateY(-90deg) translateZ(-150px);
+	transition: transform 1s linear;
+}
+
+.parent > div:nth-child(4) {
+	background: url(../images/feature/YX.jpg) no-repeat 0 0;
+	background-size: cover;
+	transform: rotateX(90deg) translateZ(150px);
+	transition: transform 1s linear;
+}
+
+.parent > div:nth-child(5) {
+	background: url(../images/feature/YX1.jpeg) no-repeat 0 0;
+	background-size: cover;
+	transform: rotateX(90deg) translateZ(-150px);
+	transition: transform 1s linear;
+}
+
+.parent > div:nth-child(6) {
+	background: url(../images/feature/YX2.jpeg) no-repeat 0 0;
+	background-size: cover;
+	transform: translateZ(150px);
+}
+
+
+/* 三月三 */
+.SYS{
+	background-image: url(../images/feature/SYS.jpg);
+}
+.SYS img{
+	opacity: 0;
+}
+.SYS:hover img{
+	-webkit-animation: sysAnimation 5s;
+	-moz-animation: sysAnimation 5s;
+	-o-animation: sysAnimation 5s;
+	-ms-animation: sysAnimation 5s;
+	animation: sysAnimation 5s;
+}
+@keyframes sysAnimation{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+/* 清明 */
+.QM img{
+	transition: all 0.5s;
+}
+.QM:hover{
+	background-image: url(../images/feature/HMF.jpeg);
+}
+.QM:hover img{
+	transform: rotateY(90deg);
+}
+
+/*  端午 */
+.DW::before{
+	content: '';
+	display: block;
+	clear: both;
+}
+.DW{
+	width: 2000px;
+	height: 100%;
+}
+.DW li{
+	float: left;
+	-webkit-animation: dwAnimation 7s;
+	-moz-animation:dwAnimation 7s;
+	-o-animation:dwAnimation 7s;
+	-ms-animation:dwAnimation 7s;
+	animation:dwAnimation 7s;
+}
+@keyframes dwAnimation{
+	from{
+		transform: translate(0px);
+	}
+	to{
+		transform: translate(-1500px);
+	}
+}
+
+/* 七夕 */
+.QX{
+	background-image: url(../images/feature/QX.jfif);
+}
+.QX img{
+	transition: all 3s;
+}
+.QX:hover img{
+	transform: scale(0) rotate(360deg);
+}
+
+.ZQ:hover{
+	transform: translateY(-10px);
+	box-shadow: 10px 10px 5px #ccc;
+}
+
+.DZ{
+	background-image: url(../images/feature/DZ1.jfif);
+}
+.DZ img{
+	transition: all 3s;
+}
+.DZ:hover img{
+	transform: translate(500px) scale(0);
+}
+
+
+.parentT {
+	width: 300px;
+	height: 300px;
+	margin: 100px auto;
+	position: relative;
+	transform: rotate(45deg);
+	transform-style: preserve-3d;
+	transition: transform 1s linear;
+	animation: col 30s linear infinite;
+}
+@keyframes col {
+	0% {
+		transform: rotateX(0deg) rotateY(0deg);
+	}
+
+	100% {
+		transform: rotateX(360deg) rotateY(360deg);
+	}
+}
+.parentT > div {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	border: none;
+}
+.parentT > div:nth-child(1) {
+	background: url(../images/feature/BS.jpg) no-repeat 0 0;
+	background-size: cover;
+	transform: translateZ(-150px);
+	transition: transform 1s linear;
+}
+
+.parentT > div:nth-child(2) {
+	background: url(../images/feature/BS2.jpg) no-repeat 0 0;
+	background-size: cover;
+	transform: rotateY(-90deg) translateZ(150px);
+	transition: transform 1s linear;
+}
+
+.parentT > div:nth-child(3) {
+	background: url(../images/feature/BS3.jpg) no-repeat 0 0;
+	background-size: cover;
+	transform: rotateY(-90deg) translateZ(-150px);
+	transition: transform 1s linear;
+}
+
+.parentT > div:nth-child(4) {
+	background: url(../images/feature/BSJ3.jpg) no-repeat 0 0;
+	background-size: cover;
+	transform: rotateX(90deg) translateZ(150px);
+	transition: transform 1s linear;
+}
+
+.parentT > div:nth-child(5) {
+	background: url(../images/feature/BSJ4.jpg) no-repeat 0 0;
+	background-size: cover;
+	transform: rotateX(90deg) translateZ(-150px);
+	transition: transform 1s linear;
+}
+
+.parentT > div:nth-child(6) {
+	background: url(../images/feature/BSJ5.jpg) no-repeat 0 0;
+	background-size: cover;
+	transform: translateZ(150px);
+}
+
+
+
+/*/////////////////////////////// 乡土文化 */
+.XTwrap{
+	width: 100%;
+	margin: 5% 0;
+	padding-bottom: 5%;
+}
+.XT{
+	width: 90%;
+	margin: 0 auto;
+}
+.XT::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.XTbox{
+	float: left;
+	width: 24.8%;
+	height: 500px;
+	border: 1px solid #CCC;
+	box-shadow: 3px 3px 5px #ccc;
+	transition: all 0.5s;
+}
+.XTbox:hover{
+	transform: translateY(-10px);
+	box-shadow: 3px 10px 5px #ccc;
+}
+.XTeven{
+	margin-top: 5%;
+}
+.XTodd .XTtext{
+	padding-top: 3%;
+}
+.XTbox li{
+	width: 100%;
+}
+.XTbox li.image{
+	height: 70%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.XTbox li.XTtext{
+	height: 30%;
+	line-height: 26px;
+	text-indent: 2em;
+}
+.image{
+	color: #fff;
+	text-align: center;
+}
+.hiddenBox{
+	width: 100%;
+	height: 100%;
+}
+.image .title{
+	font-size: 28px;
+}
+.image li p{
+	padding-top: 3%;
+}
+
+/* 龙母文化 */
+.LM{
+	background-image: url(../images/feature/LM.jpg);
+}
+/* 粤剧文化 */
+.YJ{
+	background-image: url(../images/feature/YJ1.jpg);
+}
+/* 骑楼文化 */
+.QL{
+	background-image: url(../images/feature/QL.jpg);
+}
+/* 宝石文化 */
+.BS{
+	background-image: url(../images/feature/BS1.JPEG);
+}
+
+
+/* 描点样式 */
+.miao{
+	display: block;
+	width: 35px;
+	height: 35px;
+	color: #000;
+	line-height: 32px;
+	text-align: center;
+	border: 1px solid #ccc;
+	box-shadow: 5px 5px 5px #ccc;
+	position: absolute;
+	right: 1%;
+	top: 97%;
+}
+	
+
+
+/*/////////////////////////////// 脚注部分 */
+#footer::before{
+	content: '';
+	display: block;
+	clear: both;
+}
+#footer{
+	width: 100%;
+	height: 32px;
+	line-height: 32px;
+	margin-top: 3%;
+	overflow: hidden;
+	text-align: center;
+	background: #f8f8f8;
+}
+#footer #logo{
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	margin: 0 2%;
+	margin-top: 0.2%;
+	border-radius: 50%;
+	background-image: url(../images/logo_1.jpg);
+	background-position: 50% 19%;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/countdown.css">
+	<title>countdown</title>
+</head>
+<body>
+	<div class="wrap">
+		<div class="content">
+			<h1>开始倒计时</h1>
+			<!-- 目标时间输入 -->
+			<div id="target_timeInput">
+				<label style="color: #21948C;">目标日期：</label>
+				<input type="text" name="year" id="year" class="in">
+				<label>年</label>
+				<input type="text" name="month" id="month" class="in">
+				<label>月</label>
+				<input type="text" name="day" id="day" class="in">
+				<label>日</label>
+			</div>
+
+			<!-- 开始计时 -->
+			<div id="start">开始</div>
+			<div id="stop">停止</div>
+
+			<!-- 小标题 -->
+			<div id="Ttitle">
+				<label style="font-size: 17px;">距离&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<label id="Tyear">2020</label>
+				<label>年</label>
+				<label id="Tmonth">10</label>
+				<label>月</label>
+				<label id="Tday">2020</label>
+				<label>日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<label style="font-size: 17px;">还剩：</label>
+			</div>
+
+			<!-- 倒计时 -->
+			<div id="run-time">
+				<label id="iDay">000</label>
+				<label class="font">天</label>
+				<label id="iHour">00</label>
+				<label class="font">小时</label>
+				<label id="iMin">00</label>
+				<label class="font">分</label>
+				<label id="iSec">00</label>
+				<label class="font">秒</label>
+			</div>
+		</div>
+		<div id="footer">
+			<span>软件Q176 &nbsp;&nbsp;&nbsp;&nbsp; 201709601075 &nbsp;&nbsp;&nbsp;&nbsp; 陈春丽</span>
+			<span id="logo"></span>
+			<span>2019-2020-1学期 &nbsp;&nbsp;&nbsp;&nbsp; web课程设计</span>
+		</div>
+	</div>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/countdown.js"></script>
+</body>
+</html>
