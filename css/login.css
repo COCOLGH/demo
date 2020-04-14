@@ -1,0 +1,839 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+a:hover{
+	text-decoration: none;
+	color: #333;
+}
+li{
+	list-style: none;
+}
+h2{
+	font-size: 22px;
+	margin-bottom: 25px;
+}
+button{
+	outline: none;
+	border: none;
+	background: none;
+}
+.wrap{
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+
+@media(min-width: 1025px){
+	.left {
+		float: left;
+		width: 30%;
+		height: 100%;
+		box-shadow: 1px 0 3px #ccc; 
+		position: fixed;
+	}
+	.right {
+		float: right;
+		width: 70%;
+		background-color: 
+	}
+	.wrap .left .topnav{
+		height: 50px;
+		line-height: 50px;
+		margin-top: 12px;
+	}
+	.wrap .left .topnav .top-left{
+		width: 60%;
+		height: 50px;
+		margin-left: 10px;
+		float: left;
+	}
+	.wrap .left .topnav .top-left li{
+		font-size: 17px;
+		font-weight: bold;
+		margin: 5px 10px;
+		float: left;
+	}
+	.wrap .left .topnav .top-left a:hover{
+		text-decoration: none;
+		color: #000;
+	}
+	.wrap .left .topnav .top-left:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.wrap .left .topnav .top-right{
+		float: right;	
+	}
+	.wrap .left .topnav .top-right .buttonicon{
+		width: 30px;
+		height: 30px;
+		border: none;
+		outline: none;
+		margin-right: 20px;
+		background-color: #fff;
+	}
+
+	.wrap .left .menuList:before{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.wrap .left .menuList{
+		width: 100%;
+		height: 100%;
+		padding-top: 3%;
+		display: none;
+	}
+	.wrap .left .menuList span{
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		font-size: 20px;
+		float: right;
+		cursor: pointer;
+	}
+	.wrap .left .menuList .list{
+		margin-top: 22%;
+		margin-left: 12%;
+	}
+	.wrap .left .menuList .list li{
+		font-size: 18px;
+		font-weight: bold;
+		height: 35px;
+		line-height: 35px;
+	}
+	.wrap .left .menuList .list .login,.register{
+		color: green;
+		font-size: 16px;
+	}
+	.wrap .left .menuList .list .menuBtn{
+		display: inline-block;
+		color: green;
+		font-size: 17px;
+		padding: 5px 15px;
+		border: 1px solid green;
+		box-sizing: border-box;
+		border-radius: 48px;
+		background-color: #fff;
+	}
+	.wrap .left .menuList .listBottom{
+		margin-top: 23%;
+		margin-left: 12%;
+	}
+	.wrap .left .menuList .listBottom a{
+		font-size: 14px;
+		color: rgba(0, 0, 0, 0.4);
+	}
+	.wrap .left .menuList .register{
+		margin-left: 20px;
+		padding: 4px 15px;
+		border: 1px solid green;
+		border-radius: 48px;
+		box-sizing: border-box;
+	}
+
+	.wrap .left .bottom{
+		width: 100%;
+	}
+	.wrap .left .bottom .content{
+		margin: 325px auto;
+		margin-left: 20%;
+	}
+	.wrap .left .bottom h2{
+		font-size: 26px;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+	.wrap .left .bottom span{
+		width: 100%;
+		font-size: 16px;
+		font-size: 17px;
+		font-weight: bold;
+		border-bottom: 3px solid green; 
+	}
+	.wrap .left .bottom .content a{
+		display: block;
+		color: #867e76;
+		font-size: 17px;
+		margin-top: 3%;
+		background-color: #fff;
+	}
+	.wrap .left .bottom .content a:hover{
+		color: #000;
+	}
+	.bottomMenu{
+		display: none;
+	}
+
+
+	/*///////////////////   右边   ///////////////////*/
+	.wrap .right .bg{
+		width: 100%;
+		height: 100%
+		margin: 0 auto;
+	}
+	.wrap .right .bg img{
+		width: 100%;
+		height: 100%；
+	}
+	.wrap .right .mycont{
+		margin-top: 10px;
+		background: linear-gradient(-180deg, #FCFCFC 0%, #FFF 100%);
+	}
+	.wrap .right .QRcode{
+		width: 120px;
+		height: 120px;
+		float: right;
+		position: relative;
+	}
+	.wrap .right .QRcode:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.wrap .right .QRcode img{
+		width: 120px;
+		height: 120px;
+	}
+	.wrap .right .QRcode p{
+		position: absolute;
+		top: 13px;
+		right: 20px;
+	}
+
+	.wrap .right .section{
+		width: 400px;
+		height: 570px;
+		margin: 0 auto;
+		padding-top: 35px;
+	}
+	.wrap .right .section .cont input{
+		display: block;
+		border: 0px;
+		outline: none;
+		background: none;
+		width: 100%;
+		height: 50px;
+		font-size: 17px;
+		border-bottom: 1px solid #ccc;
+	}
+	.wrap .right .section .cont input:hover{
+		border-bottom: 1px solid green;
+	}
+	.wrap .right .section .gouxuan{
+		height: 32px;
+		line-height: 32px;
+		font-size: 15px;
+		color: #7a7374;
+		margin-top: 5%;
+		float: left;
+	}
+	.wrap .right .section .gouxuan .gouxuankuang{
+		width: 32px;
+		height: 32px;
+		float: left;
+		font-size: 20px;
+		color: #fff;
+		display: block;
+		text-align: center;
+		line-height: 32px;
+		margin-right: 10px;
+		border: 1px solid green;
+		border-radius: 5px;
+	}
+	.wrap .right .section .forget{
+		height: 32px;
+		line-height: 32px;
+		font-size: 16px;
+		margin-top: 5%;
+		margin-bottom: 30px;
+		float: right;
+	}
+	.wrap .right .section .forget a{
+		color: #00A862;
+	}
+	.wrap .right .section .forget:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.wrap .right .section .loginBtn{
+		display: block;
+		font-size: 16px;
+		color: #7a7374;
+		padding: 15px 25px;
+		margin-top: 15%;
+		margin-left: 79%;
+		border-radius:48px;
+		box-sizing: border-box;
+		border: 1px solid #ccc;
+		cursor:not-allowed;
+	}
+	.footer{
+		width: 100%;
+		height: 254px;
+		margin: 2% 0;
+		overflow: hidden;
+		position: relative;
+	}
+	.footer .footerBg{
+		height: 100%;
+		overflow: hidden;
+	}
+	.footerBg img{
+		/* 外面的div设置overflow: hidden; 图片设置好宽高，超出隐藏 */
+		width: 1330px;
+		height: 315px;
+	}
+	.footer .main{
+		width: 100%;
+		height: 254px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.footer .text{
+		color: #fff;
+		margin-left: 15%;
+		padding-top: 2%;
+	}
+	.footer .text p{
+		font-size: 16px;
+		color: #cdd1d3;
+		margin-bottom: 5%;
+	}
+	.footer .register{
+		color: #C2A661;
+		margin-left: 15%;
+		padding: 10px 20px;
+		border: 1px solid #C2A661;
+		border-radius: 48px;
+		box-sizing: border-box;
+	}
+}
+
+
+
+@media(min-width: 641px) and (max-width: 1024px) {
+	.left{
+		width: 100%;
+		height: 100%;
+	}
+	.right{
+		width: 100%;
+	}
+
+
+	.wrap .left .topnav{
+		height: 50px;
+		line-height: 50px;
+		margin-top: 10px;
+	}
+	.wrap .left .topnav .top-left{
+		width: 60%;
+		height: 50px;
+		margin-left: 5px;
+		float: left;
+	}
+	.wrap .left .topnav .top-left li{
+		font-size: 17px;
+		font-weight: bold;
+		margin: 5px 10px;
+		float: left;
+	}
+	.wrap .left .topnav .top-left:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.wrap .left .topnav .top-right{
+		float: right;	
+	}
+	.wrap .left .topnav .top-right .buttonicon{
+		width: 30px;
+		height: 30px;
+		border: none;
+		outline: none;
+		margin-right: 20px;
+		background-color: #fff;
+	}
+
+	.wrap .left .menuList:before{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.wrap .left .menuList{
+		width: 100%;
+		height: 100%;
+		padding-top: 3%;
+		display: none;
+	}
+	.wrap .left .menuList span{
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		font-size: 20px;
+		float: right;
+		cursor: pointer;
+	}
+	.wrap .left .menuList .list{
+		margin-top: 22%;
+		margin-left: 12%;
+	}
+	.wrap .left .menuList .list li{
+		font-size: 18px;
+		font-weight: bold;
+		height: 35px;
+		line-height: 35px;
+	}
+	.wrap .left .menuList .list .login,.register{
+		color: green;
+		font-size: 16px;
+	}
+	.wrap .left .menuList .list .menuBtn{
+		display: inline-block;
+		color: green;
+		font-size: 17px;
+		padding: 5px 15px;
+		border: 1px solid green;
+		box-sizing: border-box;
+		border-radius: 48px;
+		background-color: #fff;
+	}
+	.wrap .left .menuList .listBottom{
+		margin-top: 23%;
+		margin-left: 12%;
+	}
+	.wrap .left .menuList .listBottom a{
+		font-size: 14px;
+		color: rgba(0, 0, 0, 0.4);
+	}
+	.wrap .left .menuList .register{
+		margin-left: 20px;
+		padding: 4px 15px;
+		border: 1px solid green;
+		border-radius: 48px;
+		box-sizing: border-box;
+	}
+
+	.wrap .left .bottom{
+		width: 100%;
+		margin-top: 10px;
+	}
+	.wrap .left .bottom .content{
+		margin-left: 20px;
+	}
+	.wrap .left .bottom h2{
+		font-size: 26px;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+	.wrap .left .bottom span{
+		display: block;
+		float: left;
+		font-size: 17px;
+		font-weight: bold;
+		padding-bottom: 5px;
+		margin-right: 20px;
+		margin-bottom: 2px;
+		border-bottom: 3px solid green; 
+	}
+	.wrap .left .bottom .content a{
+		display: block;
+		float: left;
+		color: #867e76;
+		font-size: 17px;
+		margin-right: 20px;
+		background-color: #fff;
+	}
+	.wrap .left .bottom .content a:hover{
+		color: #000;
+	}
+	.bottomMenu{
+		display: none;
+	}
+
+
+	/*///////////////////   右边   ///////////////////*/
+	.wrap .right .bg{
+		width: 100%;
+		height: 100%
+		margin: 0 auto;
+	}
+	.wrap .right .bg img{
+		width: 100%;
+		height: 100%；
+	}
+	.wrap .right .mycont{
+		margin-top: 10px;
+		background: linear-gradient(-180deg, #FCFCFC 0%, #FFF 100%);
+	}
+	.wrap .right .QRcode{
+		width: 120px;
+		height: 120px;
+		float: right;
+		position: relative;
+	}
+	.wrap .right .QRcode:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.wrap .right .QRcode img{
+		width: 120px;
+		height: 120px;
+	}
+	.wrap .right .QRcode p{
+		position: absolute;
+		top: 13px;
+		right: 20px;
+	}
+
+	.wrap .right .section{
+		width: 400px;
+		height: 570px;
+		margin: 0 auto;
+		padding-top: 35px;
+	}
+	.wrap .right .section .cont input{
+		display: block;
+		border: 0px;
+		outline: none;
+		background: none;
+		width: 100%;
+		height: 50px;
+		font-size: 17px;
+		border-bottom: 1px solid #ccc;
+	}
+	.wrap .right .section .cont input:hover{
+		border-bottom: 1px solid green;
+	}
+	.wrap .right .section .gouxuan{
+		height: 32px;
+		line-height: 32px;
+		font-size: 15px;
+		color: #7a7374;
+		margin-top: 5%;
+		float: left;
+	}
+	.wrap .right .section .gouxuan .gouxuankuang{
+		width: 32px;
+		height: 32px;
+		float: left;
+		font-size: 20px;
+		color: #fff;
+		display: block;
+		text-align: center;
+		line-height: 32px;
+		margin-right: 10px;
+		border: 1px solid green;
+		border-radius: 5px;
+	}
+	.wrap .right .section .forget{
+		height: 32px;
+		line-height: 32px;
+		font-size: 16px;
+		margin-top: 5%;
+		margin-bottom: 30px;
+		float: right;
+	}
+	.wrap .right .section .forget a{
+		color: #00A862;
+	}
+	.wrap .right .section .forget:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.wrap .right .section .loginBtn{
+		display: block;
+		font-size: 16px;
+		color: #7a7374;
+		padding: 15px 25px;
+		margin-top: 15%;
+		margin-left: 79%;
+		border-radius:48px;
+		box-sizing: border-box;
+		border: 1px solid #ccc;
+		cursor:not-allowed;
+	}
+	.footer{
+		width: 100%;
+		height: 254px;
+		margin: 2% 0;
+		overflow: hidden;
+		position: relative;
+	}
+	.footer .footerBg{
+		height: 100%;
+		overflow: hidden;
+	}
+	.footerBg img{
+		/* 外面的div设置overflow: hidden; 图片设置好宽高，超出隐藏 */
+		width: 1250px;
+		height: 315px;
+	}
+	.footer .main{
+		width: 100%;
+		height: 254px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.footer .text{
+		color: #fff;
+		margin-left: 20%;
+		padding-top: 2%;
+	}
+	.footer .text p{
+		font-size: 16px;
+		color: #cdd1d3;
+		margin-bottom: 5%;
+	}
+	.footer .register{
+		color: #C2A661;
+		margin-left: 20%;
+		padding: 10px 20px;
+		border: 1px solid #C2A661;
+		border-radius: 48px;
+		box-sizing: border-box;
+	}
+	
+}
+
+	
+
+@media(max-width: 640px) {
+	.left{
+		width: 100%;
+		height: 100%;
+	}
+	.right{
+		width: 100%;
+		height: 780px;
+		background-color: #FCFCFC;
+	}
+
+
+	.wrap .left .topnav{
+		display: none;
+	}
+
+	.wrap .left .menuList:before{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.wrap .left .menuList{
+		width: 100%;
+		height: 100%;
+		padding-top: 3%;
+		display: none;
+	}
+	.wrap .left .menuList span{
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		font-size: 20px;
+		float: right;
+		cursor: pointer;
+	}
+	.wrap .left .menuList .list{
+		margin-top: 22%;
+		margin-left: 12%;
+	}
+	.wrap .left .menuList .list li{
+		font-size: 18px;
+		font-weight: bold;
+		height: 35px;
+		line-height: 35px;
+	}
+	.wrap .left .menuList .list .login,.register{
+		color: green;
+		font-size: 16px;
+	}
+	.wrap .left .menuList .list .menuBtn{
+		display: inline-block;
+		color: green;
+		font-size: 17px;
+		padding: 5px 15px;
+		border: 1px solid green;
+		box-sizing: border-box;
+		border-radius: 48px;
+		background-color: #fff;
+	}
+	.wrap .left .menuList .listBottom{
+		margin-top: 23%;
+		margin-left: 12%;
+	}
+	.wrap .left .menuList .listBottom a{
+		font-size: 14px;
+		color: rgba(0, 0, 0, 0.4);
+	}
+	.wrap .left .menuList .register{
+		margin-left: 20px;
+		padding: 4px 15px;
+		border: 1px solid green;
+		border-radius: 48px;
+		box-sizing: border-box;
+	}
+
+	.wrap .left .bottom{
+		width: 100%;
+		box-shadow: 0 1px 3px #ccc;
+	}
+	.wrap .left .bottom .content{
+		margin-left: 20px;
+	}
+	.wrap .left .bottom .content:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.wrap .left .bottom h2{
+		font-size: 22px;
+		font-weight: bold;
+		margin-top: 0px;
+	}
+	.wrap .left .bottom span{
+		display: block;
+		float: left;
+		font-size: 16px;
+		font-weight: bold;
+		margin-right: 20px;
+		margin-bottom: 2px;
+		border-bottom: 3px solid green; 
+	}
+	.wrap .left .bottom .content a{
+		display: block;
+		float: left;
+		color: #867e76;
+		font-size: 16px;
+		margin-right: 20px;
+		background-color: #fff;
+	}
+	.wrap .left .bottom .content a:hover{
+		color: #000;
+	}
+	
+
+
+	/*///////////////////   右边   ///////////////////*/
+	.wrap .right .bg{
+		display: none;
+	}
+	.wrap .right .mycont{
+		margin-top: 3px;
+	}
+	.wrap .right .QRcode{
+		display: none;
+	}
+
+	.wrap .right .section{
+		width: 400px;
+		height: 600px;
+		margin: 0 auto;
+		padding-top: 35px;
+	}
+	.wrap .right .section .cont input{
+		display: block;
+		border: 0px;
+		outline: none;
+		background: none;
+		width: 100%;
+		height: 50px;
+		font-size: 17px;
+		margin-top: 17px;
+		border-bottom: 1px solid #ccc;
+	}
+	.wrap .right .section .cont input:hover{
+		border-bottom: 1px solid green;
+	}
+	.wrap .right .section .gouxuan{
+		height: 32px;
+		line-height: 32px;
+		font-size: 15px;
+		color: #7a7374;
+		margin-top: 5%;
+		float: left;
+	}
+	.wrap .right .section .gouxuan .gouxuankuang{
+		width: 32px;
+		height: 32px;
+		float: left;
+		font-size: 20px;
+		color: #fff;
+		display: block;
+		text-align: center;
+		line-height: 32px;
+		margin-right: 10px;
+		border: 1px solid green;
+		border-radius: 5px;
+	}
+	.wrap .right .section .forget{
+		height: 32px;
+		line-height: 32px;
+		font-size: 16px;
+		margin-top: 5%;
+		margin-bottom: 30px;
+		float: right;
+	}
+	.wrap .right .section .forget a{
+		color: #00A862;
+	}
+	.wrap .right .section .forget:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.wrap .right .section .loginBtn{
+		display: block;
+		font-size: 16px;
+		color: #7a7374;
+		padding: 15px 25px;
+		margin-top: 15%;
+		margin-left: 79%;
+		border-radius:48px;
+		box-sizing: border-box;
+		border: 1px solid #ccc;
+		cursor:not-allowed;
+	}
+	.footer{
+		display: none;
+	}
+
+
+	/* 当屏幕宽度小于640px时，才会显示的底部菜单 */
+	.bottomMenu:before{
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.bottomMenu{
+		display: block;
+		width: 100%;
+		margin-top: 10%;
+		box-shadow: 0 1px 3px #ccc;
+		background-color: #fff;
+		position: fixed;
+		bottom: 0px;
+		z-index: 10000;
+	}
+	.bottomMenu ul{
+		float: left;
+		width: 18%;
+		height: 45px;
+		text-align: center;
+		margin: 6px 1%;
+		cursor: pointer;
+	}
+}

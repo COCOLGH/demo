@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/register.css">
+	<title>register</title>
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="left">
+			<div class="topnav">
+				<ul class="top-left">
+					<li class="logo"><a href="index.html"><img src="../images/logo.png" alt="logo"></a></li>
+					<li><a href="#">门店</a></li>
+					<li><a href="login.html">我的账户</a></li>
+					<li><a href="#">菜单</a></li>
+				</ul>
+				<ul class="top-right">
+					<img class="buttonicon" src="../images/icon/menuIcon.png" alt="菜单图标" onclick="show()">
+				</ul>
+			</div>
+
+			<div class="menuList">
+				<img src="../images/logo.png" alt="picture" >
+				<span onclick="menuClosed();" class="glyphicon glyphicon-remove"></span>
+				<ul class="list">
+					<li><a href="#">门店</a></li>
+					<li><a href="#">星享俱乐部</a></li>
+					<li><a href="#">菜单</a></li>
+					<HR><!-- 分割线 -->
+					<li><a href="#">星巴克移动应用</a></li>
+					<li><a href="#">星礼卡</a></li>
+					<li><a href="#">星巴克臻选</a></li>
+					<li><a href="#">啡快 - 在线点 到店取</a></li>
+					<li><a href="#">专星送</a></li>
+					<li><a href="#">咖啡星讲堂</a></li>
+					<li><a href="#">上海烘培工坊</a></li>
+					<li><a href="#">关于星巴克</a></li>
+					<li><a href="#">帮助中心</a></li>
+					<HR>
+					<a class="login" href="login.html"><img src="../images/icon/loginicon.png" style="width: 30px; height: 20px;" alt="">登录</a>
+					<a class="register" href="register.html">注册</a>
+				</ul>
+				<ul class="listBottom">
+					<li>
+						<a href="#">Englist</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+						<a href="#">隐私政策</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+						<a href="#">使用条款</a>
+					</li>
+					<li><img src="../images/icon/icpicon.png" alt="picture" style="width: 15px; height: 15px;"><a href="#" style="font-size: 12px;">沪公安网备 31010402000318号 | 沪ICP备17003747号</a></li>
+				</ul>
+			</div>
+
+			<div class="bottom">
+				<div class="content">
+					<h2>登录或创建一个账户<img src="../images/icon/star.png" alt="picture"></h2>
+					<a class="login" href="login.html">登录</a>
+					<span>注册</span>
+					<a href="#">关于星享俱乐部</a>
+				</div>
+			</div>
+		</div><!-- left end-->
+
+
+		<div class="right">
+			<!-- 第一部分 -->
+			<div class="bg">
+				<a href="#"><img src="../images/registerBg.png" alt="picture"></a>
+			</div>
+			
+			<!-- 第二部分 链接直接放置星巴克的链接-->
+			<div class="mycont">
+				<div class="secWrap">
+					<div class="textCont">
+						<h2>使用星巴克App进行注册</h2>
+						<p>现在就下载<a href="https://www.starbucks.com.cn/apps/">星巴克App</a>便可直接用手机惊醒注册、支付、查看消费记录及管理卡片。</p>
+					</div>
+					<div class="appImg">
+						<img src="../images/register-download-app-image-cn.png" alt="picture">
+					</div>
+				</div>
+			</div>
+		</div><!-- right end-->
+
+		<!-- 下载星巴克图片 链接直接放置星巴克的链接-->
+		<div class="updImg"><a href="https://apps.apple.com/cn/app/xing-ba-ke-zhong-guo/id499819758?ls=1">
+			<img src="../images/udp-starbucks-cn.png" alt="picture">
+		</a></div>
+
+
+		<!-- 最小宽度范围时才会显示的菜单 -->
+		<div class="bottomMenu">
+			<ul><a href="index.html">
+				<img src="../images/icon/homeicon.png" alt="picture"></a>
+				<li>主页</li>
+			</a></ul>
+			<ul><a href="#">
+				<img src="../images/icon/menicon.png" alt="picture">
+				<li>门店</li>
+			</a></ul>
+			<ul><a href="login.html">
+				<img src="../images/icon/login_icon.png" alt="picture">
+				<li>我的账户</li>
+			</a></ul>
+			<ul><a href="#">
+				<img src="../images/icon/menu.png" alt="picture">
+				<li>菜单</li>
+			</a></ul>
+			<ul onclick="show()">
+				<img src="../images/icon/more.png" alt="picture">
+				<li>更多</li>
+			</ul>
+		</div>
+
+	</div><!-- wrap end-->
+
+                                                                                              
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/register.js"></script>
+</body>
+</html>

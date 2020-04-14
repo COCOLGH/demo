@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/jigsaw.css">
+	<link rel="stylesheet" href="../css/login.css">
+	<title>login</title>
+	<style>
+	.container {
+		width: 340px;
+		margin: 0px auto;
+		margin-top: 100px;
+	}
+	#msg {
+		width: 100%;
+		line-height: 40px;
+		font-size: 17px;
+		color: green; 
+		text-align: center;
+	}
+	#container a:link,
+	#container a:visited,
+	#container a:hover,
+	#container a:active {
+		margin-left: 100px;
+		color: #0366D6;
+	}
+	</style>
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="left">
+			<div class="topnav">
+				<ul class="top-left">
+					<li class="logo"><a href="index.html"><img src="../images/logo.png" alt="logo"></a></li>
+					<li><a href="#">门店</a></li>
+					<li><a href="login.html">我的账户</a></li>
+					<li><a href="#">菜单</a></li>
+				</ul>
+				<ul class="top-right">
+					<img class="buttonicon" src="../images/icon/menuIcon.png" alt="菜单图标" onclick="show()">
+				</ul>
+			</div>
+
+			<div class="menuList">
+				<img src="../images/logo.png" alt="picture" >
+				<span onclick="menuClosed();" class="glyphicon glyphicon-remove"></span>
+				<ul class="list">
+					<li><a href="#">门店</a></li>
+					<li><a href="#">星享俱乐部</a></li>
+					<li><a href="#">菜单</a></li>
+					<HR><!-- 分割线 -->
+					<li><a href="#">星巴克移动应用</a></li>
+					<li><a href="#">星礼卡</a></li>
+					<li><a href="#">星巴克臻选</a></li>
+					<li><a href="#">啡快 - 在线点 到店取</a></li>
+					<li><a href="#">专星送</a></li>
+					<li><a href="#">咖啡星讲堂</a></li>
+					<li><a href="#">上海烘培工坊</a></li>
+					<li><a href="#">关于星巴克</a></li>
+					<li><a href="#">帮助中心</a></li>
+					<HR>
+					<a class="login" href="login.html"><img src="../images/icon/loginicon.png" style="width: 30px; height: 20px;" alt="">登录</a>
+					<a class="register" href="register.html">注册</a>
+				</ul>
+				<ul class="listBottom">
+					<li>
+						<a href="#">Englist</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+						<a href="#">隐私政策</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+						<a href="#">使用条款</a>
+					</li>
+					<li><img src="../images/icon/icpicon.png" alt="picture" style="width: 15px; height: 15px;"><a href="#" style="font-size: 12px;">沪公安网备 31010402000318号 | 沪ICP备17003747号</a></li>
+				</ul>
+			</div>
+
+			<div class="bottom">
+				<div class="content">
+					<h2>登录或创建一个账户<img src="../images/icon/star.png" alt="picture"></h2>
+					<span>登录</span>
+					<a class="register" href="register.html">注册</a>
+					<a href="#">关于星享俱乐部</a>
+				</div>
+			</div>
+		</div><!-- left end-->
+
+
+		<div class="right">
+			<!-- 第一部分 -->
+			<div class="bg">
+				<a href="#"><img src="../images/registerBg.png" alt="picture"></a>
+			</div>
+			
+			<!-- 第二部分 -->
+			<div class="mycont">
+				<!-- 第二部分之二维码 -->
+				<div class="QRcode">
+					<img src="../images/qrcode-login-tip.png" alt="picture">
+					<p>扫码登陆</p>
+				</div>
+
+				<!-- 第二部分之登录信息填写处 -->
+				<div class="section">
+
+					<div class="cont">
+						<input type="text" name="user" placeholder="用户名或者电子邮箱" onclick="mystyle()">
+						<input type="password" name="password" placeholder="密码" onclick="mystyle()">
+					</div>
+
+					<div class="gouxuan" onclick="ok()">
+						<span class="gouxuankuang"></span>
+						<button><p>下次自动登录</p></button>
+					</div>
+
+					<div class="forget">
+						<a href="#">忘记密码？</a>
+					</div>
+
+					<div class="container">
+						<div id="captcha" style="position: relative"></div>
+						<div id="msg"></div>
+					</div>
+
+					<button type="button" class="loginBtn" disabled="disabled">登录</button>
+
+				</div>
+			</div><!--  mycont end-->
+			
+			<!-- 第三部分 -->
+			<div class="footer">
+				<div class="footerBg">
+					<img src="../images/account-join-bg.png" alt="picture">
+				</div>
+				<div class="main">
+					<div class="text">
+						<h2>加入星享俱乐部</h2>
+						<p>只需几分钟，便可成功注册星享俱乐部账户，成为“星”会员，立即开启集星之旅。</p>
+					</div>
+					<a class="register" href="register.html">注册</a>
+				</div>
+			</div>
+		</div><!-- right end-->
+
+
+		<!-- 最小宽度范围时才会显示的菜单 -->
+		<div class="bottomMenu">
+			<ul><a href="index.html">
+				<img src="../images/icon/homeicon.png" alt="picture"></a>
+				<li>主页</li>
+			</a></ul>
+			<ul><a href="#">
+				<img src="../images/icon/menicon.png" alt="picture">
+				<li>门店</li>
+			</a></ul>
+			<ul><a href="login.html">
+				<img src="../images/icon/login_icon.png" alt="picture">
+				<li>我的账户</a></li>
+			</ul>
+			<ul><a href="#">
+				<img src="../images/icon/menu.png" alt="picture">
+				<li>菜单</li>
+			</a></ul>
+			<ul onclick="show()">
+				<img src="../images/icon/more.png" alt="picture">
+				<li>更多</li>
+			</ul>
+		</div>
+
+	</div><!-- wrap end-->
+
+                                                                                              
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/login.js"></script>
+
+	<!-- 验证成功后，显示“验证成功！” -->
+	<script src="../js/jigsaw.js"></script>
+	<script>
+		jigsaw.init(document.getElementById('captcha'), function () {
+			document.getElementById('captcha').style.display = 'none';
+			document.getElementById('msg').innerHTML = '验证成功！'
+		})
+	</script>
+
+</body>
+</html>

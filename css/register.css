@@ -1,0 +1,619 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+a:hover{
+	text-decoration: none;
+	color: #333;
+}
+li{
+	list-style: none;
+}
+h2{
+	font-size: 22px;
+	margin-bottom: 25px;
+}
+button{
+	outline: none;
+	border: none;
+	background: none;
+}
+.wrap{
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+
+@media(min-width: 1025px){
+	.left {
+		float: left;
+		width: 30%;
+		height: 100%;
+		box-shadow: 1px 0 3px #ccc; 
+		position: fixed;
+	}
+	.right {
+		float: right;
+		width: 70%;
+		background-color: 
+	}
+	.wrap .left .topnav{
+		height: 50px;
+		line-height: 50px;
+		margin-top: 12px;
+	}
+	.wrap .left .topnav .top-left{
+		width: 60%;
+		height: 50px;
+		margin-left: 10px;
+		float: left;
+	}
+	.wrap .left .topnav .top-left li{
+		font-size: 17px;
+		font-weight: bold;
+		margin: 5px 10px;
+		float: left;
+	}
+	.wrap .left .topnav .top-left a:hover{
+		text-decoration: none;
+		color: #000;
+	}
+	.wrap .left .topnav .top-left:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.wrap .left .topnav .top-right{
+		float: right;	
+	}
+	.wrap .left .topnav .top-right .buttonicon{
+		width: 30px;
+		height: 30px;
+		border: none;
+		outline: none;
+		margin-right: 20px;
+		background-color: #fff;
+	}
+
+	.wrap .left .menuList:before{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.wrap .left .menuList{
+		width: 100%;
+		height: 100%;
+		padding-top: 3%;
+		display: none;
+	}
+	.wrap .left .menuList span{
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		font-size: 20px;
+		float: right;
+		cursor: pointer;
+	}
+	.wrap .left .menuList .list{
+		margin-top: 22%;
+		margin-left: 12%;
+	}
+	.wrap .left .menuList .list li{
+		font-size: 18px;
+		font-weight: bold;
+		height: 35px;
+		line-height: 35px;
+	}
+	.wrap .left .menuList .list .login,.register{
+		color: green;
+		font-size: 16px;
+	}
+	.wrap .left .menuList .list .menuBtn{
+		display: inline-block;
+		color: green;
+		font-size: 17px;
+		padding: 5px 15px;
+		border: 1px solid green;
+		box-sizing: border-box;
+		border-radius: 48px;
+		background-color: #fff;
+	}
+	.wrap .left .menuList .listBottom{
+		margin-top: 23%;
+		margin-left: 12%;
+	}
+	.wrap .left .menuList .listBottom a{
+		font-size: 14px;
+		color: rgba(0, 0, 0, 0.4);
+	}
+	.wrap .left .menuList .register{
+		margin-left: 20px;
+		padding: 4px 15px;
+		border: 1px solid green;
+		border-radius: 48px;
+		box-sizing: border-box;
+	}
+
+	.wrap .left .bottom{
+		width: 100%;
+	}
+	.wrap .left .bottom .content{
+		margin: 325px auto;
+		margin-left: 20%;
+	}
+	.wrap .left .bottom h2{
+		font-size: 26px;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+	.wrap .left .bottom span{
+		width: 100%;
+		font-size: 16px;
+		font-size: 17px;
+		font-weight: bold;
+		border-bottom: 3px solid green; 
+	}
+	.wrap .left .bottom .content a{
+		display: block;
+		color: #867e76;
+		font-size: 17px;
+		margin-top: 3%;
+		background-color: #fff;
+	}
+	.wrap .left .bottom .content a:hover{
+		color: #000;
+	}
+	.bottomMenu{
+		display: none;
+	}
+
+
+	/*///////////////////   右边   ///////////////////*/
+	.wrap .right .bg{
+		width: 100%;
+		height: 100%
+		margin: 0 auto;
+	}
+	.wrap .right .bg img{
+		width: 100%;
+		height: 100%；
+	}
+	.wrap .right .mycont{
+		width: 100%;
+		margin-top: 10px;
+		margin-bottom: 50px;
+		padding-top: 30px;
+		background: linear-gradient(-180deg, #FCFCFC 0%, #FFF 100%);
+	}
+	.wrap .right .mycont .secWrap{
+		width: 735px;
+		margin: 0 auto;
+		/*background-color: red;*/
+	}
+	.wrap .right .mycont .secWrap:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.wrap .right .mycont .textCont{
+		float: left;
+		width: 67%;
+		margin-top: 180px;
+		/*margin-left: 30%;*/
+	}
+	.wrap .right .mycont .textCont p{
+		width: 477px;
+	}
+	.wrap .right .mycont .appImg{
+		float: left;
+		margin-left: 20px;
+	}
+
+	.updImg{
+		display: none;
+	}
+	
+}
+
+
+
+@media(min-width: 641px) and (max-width: 1024px) {
+	.left{
+		width: 100%;
+		height: 100%;
+	}
+	.right{
+		width: 100%;
+	}
+
+
+	.wrap .left .topnav{
+		height: 50px;
+		line-height: 50px;
+		margin-top: 5px;
+	}
+	.wrap .left .topnav .top-left{
+		width: 60%;
+		height: 50px;
+		margin-left: 5px;
+		float: left;
+	}
+	.wrap .left .topnav .top-left li{
+		font-size: 17px;
+		font-weight: bold;
+		margin: 5px 10px;
+		float: left;
+	}
+	.wrap .left .topnav .top-left:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.wrap .left .topnav .top-right{
+		float: right;	
+	}
+	.wrap .left .topnav .top-right .buttonicon{
+		width: 30px;
+		height: 30px;
+		border: none;
+		outline: none;
+		margin-right: 20px;
+		background-color: #fff;
+	}
+
+	.wrap .left .menuList:before{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.wrap .left .menuList{
+		width: 100%;
+		height: 100%;
+		padding-top: 3%;
+		display: none;
+	}
+	.wrap .left .menuList span{
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		font-size: 20px;
+		float: right;
+		cursor: pointer;
+	}
+	.wrap .left .menuList .list{
+		margin-top: 22%;
+		margin-left: 12%;
+	}
+	.wrap .left .menuList .list li{
+		font-size: 18px;
+		font-weight: bold;
+		height: 35px;
+		line-height: 35px;
+	}
+	.wrap .left .menuList .list .login,.register{
+		color: green;
+		font-size: 16px;
+	}
+	.wrap .left .menuList .list .menuBtn{
+		display: inline-block;
+		color: green;
+		font-size: 17px;
+		padding: 5px 15px;
+		border: 1px solid green;
+		box-sizing: border-box;
+		border-radius: 48px;
+		background-color: #fff;
+	}
+	.wrap .left .menuList .listBottom{
+		margin-top: 23%;
+		margin-left: 12%;
+	}
+	.wrap .left .menuList .listBottom a{
+		font-size: 14px;
+		color: rgba(0, 0, 0, 0.4);
+	}
+	.wrap .left .menuList .register{
+		margin-left: 20px;
+		padding: 4px 15px;
+		border: 1px solid green;
+		border-radius: 48px;
+		box-sizing: border-box;
+	}
+
+	.wrap .left .bottom{
+		width: 100%;
+		margin-top: 10px;
+	}
+	.wrap .left .bottom .content{
+		margin-left: 20px;
+	}
+	.wrap .left .bottom h2{
+		font-size: 26px;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+	.wrap .left .bottom span{
+		display: block;
+		float: left;
+		font-size: 17px;
+		font-weight: bold;
+		padding-bottom: 5px;
+		margin-right: 20px;
+		margin-bottom: 2px;
+		border-bottom: 3px solid green; 
+	}
+	.wrap .left .bottom .content a{
+		display: block;
+		float: left;
+		color: #867e76;
+		font-size: 17px;
+		margin-right: 20px;
+		background-color: #fff;
+	}
+	.wrap .left .bottom .content a:hover{
+		color: #000;
+	}
+	.bottomMenu{
+		display: none;
+	}
+
+
+	/*///////////////////   右边   ///////////////////*/
+	.wrap .right .bg{
+		width: 100%;
+		height: 100%
+		margin: 0 auto;
+	}
+	.wrap .right .bg img{
+		width: 100%;
+		height: 100%；
+	}
+	.wrap .right .mycont{
+		width: 100%;
+		padding-top: 30px;
+		margin-top: 10px;
+		margin-bottom: 50px;
+		background: linear-gradient(-180deg, #FCFCFC 0%, #FFF 100%);
+	}
+	.wrap .right .mycont .secWrap {
+		width: 700px;
+		margin: 0 auto;
+	}
+	.wrap .right .mycont .secWrap:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.wrap .right .mycont .textCont{
+		float: left;
+		width: 67%;
+		margin-top: 180px;
+	}
+	.wrap .right .mycont .appImg{
+		float: left;
+		margin-left: 20px;
+	}
+
+	.updImg{
+		position: absolute;
+		top: 87.5%;
+		left: 15%;
+	}
+	
+	
+}
+
+	
+
+@media(max-width: 640px) {
+	.left{
+		width: 100%;
+		height: 100%;
+	}
+	.right{
+		width: 100%;
+	}
+
+
+	.wrap .left .topnav{
+		display: none;
+	}
+
+	.wrap .left .menuList:before{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.wrap .left .menuList{
+		width: 100%;
+		height: 100%;
+		padding-top: 3%;
+		display: none;
+	}
+	.wrap .left .menuList span{
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		font-size: 20px;
+		float: right;
+		cursor: pointer;
+	}
+	.wrap .left .menuList .list{
+		margin-top: 22%;
+		margin-left: 12%;
+	}
+	.wrap .left .menuList .list li{
+		font-size: 18px;
+		font-weight: bold;
+		height: 35px;
+		line-height: 35px;
+	}
+	.wrap .left .menuList .list .login,.register{
+		color: green;
+		font-size: 16px;
+	}
+	.wrap .left .menuList .list .menuBtn{
+		display: inline-block;
+		color: green;
+		font-size: 17px;
+		padding: 5px 15px;
+		border: 1px solid green;
+		box-sizing: border-box;
+		border-radius: 48px;
+		background-color: #fff;
+	}
+	.wrap .left .menuList .listBottom{
+		margin-top: 23%;
+		margin-left: 12%;
+	}
+	.wrap .left .menuList .listBottom a{
+		font-size: 14px;
+		color: rgba(0, 0, 0, 0.4);
+	}
+	.wrap .left .menuList .register{
+		margin-left: 20px;
+		padding: 4px 15px;
+		border: 1px solid green;
+		border-radius: 48px;
+		box-sizing: border-box;
+	}
+
+	.wrap .left .bottom{
+		width: 100%;
+		box-shadow: 0 1px 3px #ccc;
+		margin-bottom: 3px;
+	}
+	.wrap .left .bottom .content{
+		padding-top: 15px;
+		margin-left: 15px;
+	}
+	.wrap .left .bottom .content:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.wrap .left .bottom h2{
+		font-size: 22px;
+		font-weight: bold;
+		margin: 0px;
+	}
+	.wrap .left .bottom span{
+		display: block;
+		float: left;
+		font-size: 16px;
+		font-weight: bold;
+		padding-bottom: 5px;
+		margin-right: 20px;
+		margin-bottom: 1px;
+		margin-top: 16px;
+		border-bottom: 3px solid green; 
+	}
+	.wrap .left .bottom .content a{
+		display: block;
+		float: left;
+		color: #867e76;
+		font-size: 16px;
+		margin-top: 16px;
+		margin-right: 15px;
+		background-color: #fff;
+	}
+	.wrap .left .bottom .content a:hover{
+		color: #000;
+	}
+	
+
+
+	/*///////////////////   右边   ///////////////////*/
+	.wrap .right .bg{
+		display: none;
+	}
+	.wrap .right .mycont{
+		padding-top: 22px;
+		padding-bottom: 230px;
+		background: linear-gradient(-180deg, #FCFCFC 0%, #FFF 100%);
+	}
+	.wrap .right .mycont .textCont{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.wrap .right .mycont .textCont h2{
+		font-size: 20px;
+		margin: 0px;
+	}
+	.wrap .right .mycont .textCont p{
+		font-size: 16px;
+		line-height: 26px;
+		margin-top: 16px;
+		margin-right: 5px;
+	}
+	.wrap .right .mycont .appImg{
+		margin: 32px auto;
+	}
+
+	/* 下载星巴克图片 */
+	.updImg{
+		position: fixed;
+		right: 2px;
+		bottom: 80px;
+	}
+
+	/* 当屏幕宽度小于640px时，才会显示的底部菜单 */
+	.bottomMenu:before{
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.bottomMenu{
+		display: block;
+		width: 100%;
+		margin-top: 10%;
+		box-shadow: 0 1px 5px #ccc;
+		background-color: #fff;
+		position: fixed;
+		bottom: 0px;
+		z-index: 10000;
+	}
+	.bottomMenu ul{
+		float: left;
+		width: 18%;
+		height: 45px;
+		text-align: center;
+		margin: 6px 1%;
+		cursor: pointer;
+	}
+}
+
+
+/* 右侧样式部分 */
+
+.wrap .right .mycont .textCont p{
+	font-size: 16px;
+	line-height: 26px;
+}
+.wrap .right .mycont .textCont p a{
+	color: #00A862;
+}
+.wrap .right .mycont .appImg{
+	width: 192px;
+}
+.wrap .right .mycont .appImg img{
+	width: 192px;
+	height: 409px;
+}
+.updImg {
+	width: 162px;
+	height: 53px;
+	box-sizing: 40px;
+	border-radius: 50px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.38);
+}
+.updImg img{
+	width: 162px;
+	height: 53px;
+}
